@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>The Internet</title>
+		<meta name="description" content="A short summary of the Internet and what it does.">
+		<link rel="stylesheet" href="internet.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+
+                $('p.tele').click(function(){
+                    alert("Do you want to call?");
+                });
+                $('img.cell').hide();
+
+                $('.subheader span').click(function(){
+                    $('img.cell').show("slow");
+                });
+                $('h3').click(function(){
+                    $('p').toggle("slow");
+                });
+                $('#bigthree').hide();
+                $('h2').click(function(){
+                    $('#bigthree').slideDown("slow");
+                });
+                $('h1').click(function(){
+                    $('p').slideUp("slow");
+                });
+                $('.subheader h4').click(function() {
+                    $('.subheader span').slideToggle( "slow", function() {
+                    });
+                });
+                $('.ad').hide();
+                $('.ad').fadeIn("slow", function(){
+                    });
+                $('input').fadeOut("slow", function(){
+                    });
+                $('h1').addClass('ad');
+                $('h3').before('<p>La La La</p>');
+                $('h3').after('<p>bingo!</p>');
+                $('.content').append('<p>This is a test for append</p>');
+                $('.content').prepend('<p>This is a test for prepend</p>');
+                $('.tele').html('<span>Hello <b>Again</b></span>');
+                $('#earth').hover(function(){
+                    $(this).attr('src','ninja.png');
+                },
+                    function(){
+                        $(this).attr('src','globe.png');
+                });
+                $('input.watch').val('Do not click this link');
+                $('.content').click(function(){
+                    $('.content').text("you have read everything in this section");
+                });
+                
+            });
+        
+        
+        
+        </script>
+	</head>
+    <body>
+        <div id="wrapper">
+            <div class="header">
+                <img src="globe.png" alt="globe" id="earth">
+                <h1>The Inter<span class="blue">net</span></h1>
+                <h2><span class="h2">The World Wide Web</span></h2>
+            </div>
+            <div class="resources">
+                <p class="first">So, what's an <span id="red">Internet?</span></p>
+                <p>An <span class="blue">Inter</span>connected <span class="blue">Net</span>work of computers all around the world!</p>
+                <form>
+                   <input type="button" class="watch" value="WATCH A VIDEO" onclick="window.location.href='https://www.google.com'"/> 
+                   <input type="button" class="resources" value="MORE RESOURCES" onclick="window.location.href='https://www.google.com'"/>
+                </form>
+            </div>
+            <img class="backad" src="ad_background.png" alt="adbackground">
+            <div class="ad">
+                <p>Reinvent your career in just 14 weeks</p>
+                <img src="ninja.png" alt="ninja" id="ninja">
+                <form>
+                    <input type="button" class="learnmore" value="Learn More >>>" onclick="window.location.href='https://www.google.com'">
+                </form>
+            </div>
+            <div class="subheader">
+                <img src="home.png" alt="house" class="hut">
+                <h4>DNS</h4>
+                <img src="phone.png" alt="phone" class="cell">
+                <span class="localcontact">Mon - Fri 9 a.m. - 5 p.c. (EST)</span>
+                <p class="tele">855 . 967 . 3787</p>
+                <span class="intlcontact">International +1.617.963.0555</span>
+            </div>
+            <div class="content">
+                <h3>Clients and Servers</h3>
+                <p>Computers connected to the <span class="keywords">Web</span> are called <span class="bold">clients</span> and <span class="bold">servers.</span></p>
+                <ul>
+                    <li><span class="keywords">Lorem</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et tellus a sem ultricies porta. Quisque mattis elit sed semper dignissim. Ut pharetra <span class="keywords">eleifend mauris</span>. Nulla facilisi. Proin vitae diam diam. Proin id sapien nisi.</li>
+                    <li><span class="keywords">Vivamus</span> elementum metus <span class="keywords">mauris</span>, <span class="keywords">iaculis</span>, <span class="keywords">facilisis</span> nulla venenatis eu. Duis rutrum ultricies diam ut tristique.</li>
+                </ul>
+                <img src="client_server.jpg" alt="cycle" class="csc">
+                <h3>So What Actually Happens?</h3>
+                <ol>
+                    <li>The browser goes to the <span class="keywords">DNS server</span> and finds the real address of the <span class="keywords">server</span> that the website lives on.</li>
+                    <li>The browser send and <span class="keywords">HTTP Request</span> message to the server asking it to send a copy of the website to the client.</li>
+                    <li>If the server approves the client's request, the server sends the client a <span class="keywords">"200 OK" message</span>, which means "permission granted!" Here you go!", and then starts sending the website's files to the browser as a series of small chunks.</li>
+                    <li>The broswer assembles the small chunks into a complete website and displays it to you!</li>
+                </ol>
+            </div>
+            <div id="bigthree">
+                <img src="html.png" alt="The Big Three">
+                <h3>The Big 3 - HTML, CSS, JavaScript</h3>
+                <p>While the server can process information in many different languages, the files that they serve to the client are <span class="italic">always</span> going to be some combination of HTML, CSS, and Javascript!</p>
+                <p>Learn more about the Big 3 <a href="https://www.google.com">here</a>!</p>
+            </div>
+            
+        </div>
+    </body>
+</html>

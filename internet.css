@@ -1,0 +1,265 @@
+/*CSS reset settings here*/
+*{
+ margin: 0px;
+ padding: 0px; 
+}
+#wrapper{
+    background:linear-gradient(#e8e8e8,#ffffff);
+    width: 1000px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif
+}
+.header{
+    background-color: white;
+    height: 150px;
+    width: 1000px;
+}
+.header img{
+    width:100px;
+    background-color: white;
+    position: relative;
+    top: 5px;
+}
+h1{
+    background-color: white;
+    position: relative;
+    left: 110px;
+    bottom: 80px;
+    width: 400px;
+    font-size: 40px;
+   
+}
+.header span.blue{
+    color:#2c6ba0;
+    background-color: white;
+}
+.header p{
+    background:linear-gradient(#2c6ba0, #4b7fab, #2c6ba0);
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+.header h2{
+       background:linear-gradient(#2c6ba0, #4b7fab, #2c6ba0);
+       height: 50px;
+       position: relative;
+       bottom: 50px;
+       width: 1001px;
+       color: white;
+}
+h2 span.h2{
+   font-size: 26px;
+   height: 40px;
+   position: relative;
+   left: 20px;
+   top:10px;
+}
+.resources{
+    width: 240px;
+    height: 200px;
+    border-bottom: 2px solid gray;
+}
+.resources span#red{
+    color: red;
+}
+.resources span.blue{
+    color:#3e79aa;
+}
+.resources p{
+    margin-top: 10px;
+    font-weight: bold;
+}
+p.first{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+form{
+    width: 250px;
+}
+input.watch{
+    background-color: #417daf;
+    width:200px;
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: white;
+}
+input.resources{
+    background-color:#ef7f30;
+    width: 200px;
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: white;
+}
+img.backad{
+    width: 241px;
+    margin-top: 20px;
+}
+.ad{
+    width: 200px;
+    text-align: center;
+    margin-top: 10px;
+}
+.ad p{
+    position: relative;
+    bottom: 300px;
+    left: 20px;
+    color: white;
+    font-size: 25px;
+}
+.ad img{
+    width: 80px;
+    position: relative;
+    bottom: 300px;
+    left: 15px;
+}
+input.learnmore{
+    background-color: #54c9df;
+    height: 40px;
+    width: 200px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 290px;
+    right: 5px;
+    color: white;
+    font-size: 20px;
+}
+.ad button a{
+    text-decoration: none;
+}
+.subheader{
+    display: flex;
+    width: 750px;
+    height: 70px;
+    position: relative;
+    bottom:825px;
+    left: 245px;
+    border-bottom: 2px solid gray;
+}
+.subheader img.hut{
+    width: 20px;
+    height: 20px;
+    margin:10px;
+    position: relative;
+    bottom: 20px;
+}
+h4{
+    color:#3e79aa;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+    position: relative;
+    bottom: 20px;
+}
+span.localcontact{
+    width: 400px;
+    height: 20px;
+    font-size: 14px;
+    position: relative;
+    left: 410px;
+    bottom: 15px;
+}
+p.tele{
+    color:#52c3df;
+    text-indent:20px;
+    width: 400px;
+    height: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    left: 205px;
+    top: 5px;
+}
+span.intlcontact{
+    width: 400px;
+    height: 20px;
+    font-size: 14px;
+    position: relative;
+    top: 30px;
+}
+img.cell{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    bottom: 10px;
+    left: 400px;
+}
+h3{
+    color:#2b6ca2;
+    margin-top: 10px;
+}
+.content{
+    width: 670px;
+    position: relative;
+    left: 300px;
+    bottom: 830px;
+}
+.content p{
+    margin-top: 10px;
+}
+.content img{
+    width: 250px;
+    margin-left: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+ul{
+    position: relative;
+    left: 30px;
+    width:625px;
+    margin-top: 5px;
+}
+ul li{
+    margin-top: 5px;
+}
+ol{
+    position: relative;
+    left: 30px;
+    width: 625px;
+}
+ol li{
+    margin-top: 5px;
+}
+span.keywords{
+    color:#3e9ab1;
+}
+#bigthree img{
+    width: 150px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+#bigthree{
+    position: relative;
+    bottom: 800px;
+    left: 300px;
+    width: 670px;
+    height: 185px;
+    border-top: 5px solid #3886e0;
+    border-left: 5px solid #3886e0;
+    border-right: 5px solid #3886e0;
+}
+#bigthree h3{
+    position: relative;
+    left: 180px;
+    bottom: 145px;
+}
+#bigthree p{
+    width: 400px;
+    margin-bottom: 5px;
+    position: relative;
+    left: 180px;
+    bottom: 130px;
+}
+#bigthree a{
+    text-decoration: none;
+    color:#449fb5;
+}
